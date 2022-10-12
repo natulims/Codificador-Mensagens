@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Codificador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="imgs/android-chrome-192x192.png" />
+    <link rel="stylesheet" href="css/estilo-pagina.css" />
+    <style>
+      @font-face {
+        font-family: "Brolian";
+        src: url("fonts/Mogena.ttf") format("truetype");
+      }
+    </style>
+  </head>
+  <body>
+<!--menu-->
+    <nav><ul>
+      <li>home</li>
+      <li>sobre o projeto</li>
+    </nav>
+
+    <!--header-->
+    <section id="header">
+      <img class="search" src="imgs/search.png" />
+      <h1>Codificador de Texto</h1>
+    </section>
+
+
+    <!--texto-->
+    <section id="container">
+      <!--      <button onclick="myFunction()" class="dark-Mode">modo escuro</button>-->
+    </section>
+
+    <!--interação com js-->
+    <section id="text">
+      <div class="left-container">
+        <textarea
+          placeholder="digite seu texto aqui..."
+          class="input"
+          id="input-text"
+        ></textarea>
+      </div>
+
+      <div class="right-container">
+        <div>
+          
+        </div>
+      </div>
+      <button class="btn-encode">codificar</button>
+      <button class="btn-decode">decodificar</button>
+      <p><em>Apenas letras minúsculas e sem acentuação.</em></p>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <p>Criado por:</p>
+      <h3><strong>Natalia</strong></h3>
+      <div class="redes-sociais"></div>
+    </footer>
+
+    <!--scripts-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
