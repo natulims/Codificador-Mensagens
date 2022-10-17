@@ -4,66 +4,139 @@
     <meta charset="utf-8" />
     <title>Codificador</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="imgs/android-chrome-192x192.png" />
+    <link rel="icon" href="imgs/favicon-32x32.png" />
     <link rel="stylesheet" href="css/estilo-pagina.css" />
-  <style>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <style>
       @font-face {
-        font-family: "Brolian";
-        src: url("fonts/Mogena.ttf") format("truetype");
+        font-family: "Tommy";
+        src: url("fonts/MADE Tommy Soft Bold PERSONAL USE.otf")
+          format("opentype");
       }
     </style>
   </head>
+
   <body>
-<!--menu-->
-<nav><ul>
-      <li>home</li>
-      <li>sobre o projeto</li>
-       <!--      <button onclick="myFunction()" class="dark-Mode">modo escuro</button>-->
-    </nav>
+    <!--menu-->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="sobre-projeto.html">sobre o projeto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--fim do menu-->
 
-    <!--header-->
-    <section id="header">
-      <img class="search" src="imgs/search.png" />
-      <h1 class="h1">Codificador de Texto</h1>
-    </section>
+    <!--codificador-->
+    <main>
+      <div class="image-section">
+        <img
+          src="imgs/231-2315426_stationery-vector-with-computer-vector-graphics.png"
+        />
+      </div>
 
-    
-    <!--interação com js-->
+      <h1>codificador de texto</h1>
+    </main>
+
     <section id="text-encode-decode">
-      <div class="left-container">
-        <textarea
-          placeholder="digite seu texto aqui..."
-          class="input"
-          id="input-text"
-        ></textarea>
-      </div>
-      
-      <div class="right-container">
-        <div>
-          
+      <div class="container">
+        <!--container - lado esquerdo-->
+        <div class="left-container">
+          <textarea placeholder="digite seu texto aqui..." class="input" id="input-text"></textarea>
+  
         </div>
+  
+        <form>
+          <div class="escolhas">
+            <fieldset>
+              <select class="metodo" required>
+                <option>Escolha o método</option>
+                <option>Cifra de Cesar</option>
+                <option>Base 64</option>
+              </select>
+            </fieldset>
+        
+            
+            <div class="passo">
+              <input
+                id="chave"
+                type="range"
+                value="21"
+                min="1"
+                max="99"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output>21</output>
+            </div>
+        
+            <fieldset class="tipo">
+              <div class="coddecod">
+                <input
+                  type="radio"
+                  name="coddecod"
+                  value="msg-codigo"
+                  id="codificar"
+                  checked
+                />
+                <label for="codificar">Codificar</label>
+              </div>
+              <div class="cod-decod">
+                <input
+                  type="radio"
+                  name="coddecod"
+                  value="codigo-msg"
+                  id="decodificar"
+                />
+                <label for="decodificar">Decodificar</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="btn">
+            <button class="enviar">Codificar</button>
+          </div>
+          <!--fim do codificador-->
+        </form>
       </div>
-      <button class="btn-encode">codificar</button>
-      <button class="btn-decode">decodificar</button>
-      <p><em>Apenas letras minúsculas e sem acentuação.</em></p>
+      <!--container - fim do lado esquerdo-->
+  
+      <!--container - lado direito-->
+      <div class="right-container">
+        <div id="output" class="resposta"></div>
+        <button class="copy" id="copy">copiar texto</button>
+      </div>
+      <!--container - fim do lado direito-->
     </section>
+    <!--fim do codificador-->
 
     <!--footer-->
     <footer>
-      <hr>
-      <p>Criado por:</p>
-      <h3><strong>Natalia</strong></h3>
-      <div class="redes-sociais">
+      <hr />
+      <p>
+        Copyright<strong> &copy;2022</strong><br />
+        Template made by: <strong>Natalia Carvalho</strong>
+      </p>
+      <div class="social-media">
         <a target="”_blank”" href="https://www.instagram.com/natulims/"
-        ><img src="imgs/instagram.png"></a>
-      <a target="”_blank”" href="https://www.facebook.com/natulims/"
-        ><img src="imgs/links.png"></a>
-      <a target="”_blank”" href="https://www.pinterest.pt/natulims/"
-        ><img src="imgs/git.png"></a>
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+        <a target="”_blank”" href="https://www.facebook.com/natulims/"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a target="”_blank”" href="https://www.pinterest.pt/natulims/"
+          ><i class="bx bxl-github"></i
+        ></a>
       </div>
     </footer>
+    <!--fim do footer-->
 
     <!--scripts-->
-    <script src="js/script.js"></script>
+    <script src="js/help.js"></script>
+    <script src="js/cesar.js"></script>
+    <script src="js/base64.js"></script>
   </body>
 </html>
