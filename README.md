@@ -1,6 +1,6 @@
 <h1 align="center">SEGUNDO PROJETO INDIVIDUAL </h1>
 <h2>&#128209 Sobre o Projeto</h2><br>
-<p align="center"><img src="https://64.media.tumblr.com/b91ef6e7e427d783e2ece9057b43758d/dd76d36e339a2574-9a/s1280x1920/70183c183a576850353e2559a4150f9090ac798d.pnj" width=600><p>
+<p align="center"><img src="https://64.media.tumblr.com/d3552dd0b7d0f1acb77101004171fa1b/7666b387755f1e42-a5/s1280x1920/9439bdb924e867cd02e86990111c4b6ff0691a22.pnj" width=600><p>
 <p align=justify>Esse é o segundo projeto individual criado para o curso Programadores Cariocas! Você pode testá-lo através desse <a href="https://natulims.github.io/Codificador-Mensagens/">link</a>, pelo link na descrição ou baixando! O objetivo desse projeto é criar um codificador de texto que seja capaz de <i>codificar</i> e <i>decodificar</i> uma mensagem em <i>Cifra de César</i> e <i>BASE64</i>.
 <br>
 Além dos botões para codificar e decodificar a sua mensagem há o botão para <strong>copiar o seu texto</strong>.<br>
